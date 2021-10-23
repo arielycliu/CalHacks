@@ -1,0 +1,5 @@
+
+
+set NOTION_KEY=secret_EgRbXEWhI8xvJKzzA2ycfESVWjpzmtd0bi0Vwo0ds9R
+set NOTION_DATABASE_ID= d003a9020a2548e88ec136b0bf2aad22
+set NOTION_API_TOKEN=secret_EgRbXEWhI8xvJKzzA2ycfESVWjpzmtd0bi0Vwo0ds9R

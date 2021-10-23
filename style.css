@@ -1,0 +1,108 @@
+/* ~~~~ IMPORT FONTS ~~~~ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ~~~~ MAIN STUFF STYLE ~~~~ */
+:root {
+    --bg-gray: #2F3437;
+    --light-gray: #3F4447;
+    --white: #fff;
+    --main-font: 'Noto Sans Mono', monospace;
+    --h1-weight: 600;
+    --h2-weight: 500;
+    --h3-weight: 400;
+    --p-weight: 300;
+    --cardborderradius: 5px;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    background-color: var(--bg-gray);
+}
+
+section {
+    position: relative;
+    padding: 10%;
+}
+h1 {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: var(--h1-weight);    
+}
+p {
+    color: var(--white);
+    letter-spacing: 0.05em;
+}
+#divider_line {
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--light-gray);
+    position: relative;
+}
+
+/* Title section styling */
+.title {
+    padding-bottom: 0%;
+    background-color: var(--bg-gray);
+}
+.title h1 {
+    margin-bottom: 0.1em; /*margin for divider*/
+}
+
+/* ~~~~ TABLE SECTION STYLING ~~~~ */
+.table {
+    padding-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--bg-gray);
+}
+
+/* Column headings */
+.columnheading {
+    color: var(--white);
+    padding: 2px 10px;
+    margin: 0 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: var(--cardborderradius);
+    font-size: 1em;
+    font-weight: 300;
+    display: inline-block;
+}
+#urgent {
+    background-color: #7A363B;
+}
+#less {
+    background-color: #92763F;
+}
+#least {
+    background-color: #325241;
+}
+
+/* Card styling */
+.card {
+    margin: 0.4em 0.5em;
+}
+.card .requestheading {
+    color: var(--white);
+    font-size: 1.05em;
+    font-weight: 400;
+
+    background-color: var(--light-gray);
+    border-radius: var(--cardborderradius) var(--cardborderradius) 0 0;
+
+    padding: 0.8em;
+    padding-bottom: 0.1em;
+}
+.card p {
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+
+    background-color: var(--light-gray);
+    border-radius: 0 0 var(--cardborderradius) var(--cardborderradius);
+
+    padding: 0.85em;
+    padding-top: 0%;
+}

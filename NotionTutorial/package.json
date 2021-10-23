@@ -1,0 +1,10 @@
+{
+  "name": "NotionTutorial",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Add data to notion",
+  "main": "index.js",
+  "dependencies": {
+    "@notionhq/client": "^0.1.9"
+  }
+}
