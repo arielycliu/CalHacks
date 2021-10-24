@@ -21,9 +21,9 @@ async function addItem(Name, email, person) {
 		  "type": "email",
 		  "email": email
 		},
-		Person: {
-		  "type": "person",
-		  "person": person
+		People: {
+		  "type": "multi_select",
+		  "multi_select": [{name: person}]
 		}
       },
     })
@@ -34,4 +34,4 @@ async function addItem(Name, email, person) {
   }
 }
 
-addItem("Request1", "ariel.liu@gmail.com", null)
+addItem("Request1", "ariel.yc.liu@gmail.com", "ariel.yc.liu@gmail.com")
