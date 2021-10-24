@@ -1,6 +1,8 @@
 import { Client } from "@notionhq/client"
 
-const { notion, databaseId } = process.env;
+const notion = new Client({ auth: process.env.NOTION_KEY })
+
+const databaseId = process.env.NOTION_DATABASE_ID
 
 async function addItem(request, thestatus, room, patient, date, nurse) {
   try {
